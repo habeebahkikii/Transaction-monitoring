@@ -2,7 +2,7 @@ import altair as alt
 import pandas as pd
 import streamlit as st
 import datetime
-from datetime import date, timedelta
+from datetime import datetime, date, timedelta
 #import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Charts", page_icon="📈")
