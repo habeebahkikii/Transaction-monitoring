@@ -5,14 +5,16 @@ st.set_page_config(
     page_icon="👋",
 )
 
-st.write("# Welcome to PayPal Risk Reviews")
+st.write("# Welcome to PayPal Reviews")
 
 st.markdown(
     """
-    These 2 apps help review possible fraud
-    ** 👈 Select an app from the sidebar to start
+    These 2 apps help review transactions
+    
+    👈 Select an app from the sidebar to start
 
     If the app doesn't work reach out to Habeebah Abdulkareem
+
     Reach out to her here 👉[Linkedin](https://www.linkedin.com/in/habeebah-abdulkareem/)
     """
 
