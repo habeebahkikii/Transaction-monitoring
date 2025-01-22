@@ -27,7 +27,9 @@ if uploaded_file is not None:
     buffer = io.BytesIO()
 
     
-    dfpreclean.drop(['Transaction_ID','Auth_code'], axis=1, inplace=True)
+   columns_to_drop = ['Transaction_ID', 'Auth_code']
+dfpreclean = dfpreclean.drop(columns=[col for col in columns_to_drop if col in dfpreclean.columns], inplace=False)
+
     dfpreclean2 = dfpreclean[dfpreclean['Success'] == 1]
     dfpreclean2["Transaction_Notes"].fillna("N/A", inplace = True)
 
