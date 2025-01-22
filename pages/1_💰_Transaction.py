@@ -28,7 +28,7 @@ if uploaded_file is not None:
 
     
    columns_to_drop = ['Transaction_ID', 'Auth_code']
-dfpreclean = dfpreclean.drop(columns=[col for col in columns_to_drop if col in dfpreclean.columns], inplace=False)
+   dfpreclean = dfpreclean.drop(columns=[col for col in columns_to_drop if col in dfpreclean.columns], inplace=False)
 
     dfpreclean2 = dfpreclean[dfpreclean['Success'] == 1]
     dfpreclean2["Transaction_Notes"].fillna("N/A", inplace = True)
